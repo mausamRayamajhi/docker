@@ -169,13 +169,13 @@ docker network di/connect <network name> <container name>
 </details>
   
   
-    <details><summary> Create custome docker image</summary>
+<details><summary> Create custome docker image</summary>
 <p>
-  ```
+```
 vi dockerfile
   
 ``` 
-    ```
+```
 FROM centos
   RUN yum install -y httpd
   ADD index.html /var/www/html
@@ -185,7 +185,7 @@ FROM centos
   ENV myenv myvalue
   
 ``` 
-    ```
+```
 docker build -t myimagename .
   
 ``` 
@@ -193,7 +193,7 @@ docker build -t myimagename .
 </details>
   
   
-  <details><summary> Publish image to docker hun</summary>
+<details><summary> Publish image to docker hun</summary>
 <p>
   - Tag docker file
   ```
