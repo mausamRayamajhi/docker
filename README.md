@@ -198,19 +198,19 @@ docker build -t myimagename .
   
 <details><summary> Publish image to docker hun</summary>
 <p>
-  - Tag docker file
-  ```
+  
+- Tag docker file
+```
 docker tag <image name> <docker hub user name>/<image name>
-  
 ``` 
-  - Push to hun
-  ```
-docker push <docker hub user name>/<image name>
+- Push to hun
   
+```
+docker push <docker hub user name>/<image name>
 ``` 
 </p>
 </details>
   
-  </p>
+</p>
 </details>
 
