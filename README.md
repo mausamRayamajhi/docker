@@ -171,12 +171,15 @@ docker network di/connect <network name> <container name>
   
 <details><summary> Create custome docker image</summary>
 <p>
+  
+- Crate dockerfile
 ```
 vi dockerfile
-  
 ``` 
+ 
+- Create docker file with followind syntac
 ```
-FROM centos
+  FROM centos
   RUN yum install -y httpd
   ADD index.html /var/www/html
   CMD apachectl -D FOREGROUND
