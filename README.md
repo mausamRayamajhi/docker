@@ -7,6 +7,8 @@ Docker integration with java
 <details><summary> Command</summary>
 <p>
 
+  <details><summary> General commands</summary>
+<p>
 - Install docker 
 
 ```
@@ -90,6 +92,8 @@ docker run -dit --name=mycontainer -p 8000:80 nginx
 ```
 docker pause/unpause <container name>
 ``` 
+ </p>
+</details>
   
 <details><summary> Docker MYSQL Command</summary>
 <p>
@@ -164,6 +168,46 @@ docker network di/connect <network name> <container name>
 </p>
 </details>
   
+  
+    <details><summary> Create custome docker image</summary>
+<p>
+  ```
+vi dockerfile
+  
+``` 
+    ```
+FROM centos
+  RUN yum install -y httpd
+  ADD index.html /var/www/html
+  CMD apachectl -D FOREGROUND
+  EXPOSE 80
+  MAINTAINER MAUSAM
+  ENV myenv myvalue
+  
+``` 
+    ```
+docker build -t myimagename .
+  
+``` 
 </p>
+</details>
+  
+  
+  <details><summary> Publish image to docker hun</summary>
+<p>
+  - Tag docker file
+  ```
+docker tag <image name> <docker hub user name>/<image name>
+  
+``` 
+  - Push to hun
+  ```
+docker push <docker hub user name>/<image name>
+  
+``` 
+</p>
+</details>
+  
+  </p>
 </details>
 
