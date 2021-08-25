@@ -95,25 +95,32 @@ docker pause/unpause <container name>
  </p>
 </details>
   
+  
 <details><summary> Docker MYSQL Command</summary>
 <p>
+  
 ```
- docker run -d -p 6666:3306 --name=docker-mysql --env="MYSQL_ROOT_PASSWORD=test1234" --env="MYSQL_DATABASE=emp" mysql
+docker run -d -p 6666:3306 --name=docker-mysql --env="MYSQL_ROOT_PASSWORD=test1234" --env="MYSQL_DATABASE=emp" mysql
 ```
+  
 ```
 docker exec -it docker-mysql bash
 ```
+  
 ```
 mysql -uroot -p 
 ```
+  
 - Enter mysql password
 ```
 test1234
 ```
+  
 - Perform some sql command
 ```
 mysql> show databases;
 ```
+  
 ```
 mysql> show tables; 
 ```
