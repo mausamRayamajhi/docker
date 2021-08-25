@@ -92,6 +92,12 @@ docker run -dit --name=mycontainer -p 8000:80 nginx
 ```
 docker pause/unpause <container name>
 ``` 
+
+- Delete all images
+
+```
+docker image prune -a
+``` 
  </p>
 </details>
   
