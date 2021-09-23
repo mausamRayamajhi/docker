@@ -241,8 +241,7 @@ docker push <docker hub user name>/<image name>
   
 ```
 Setup the mysql container:
-docker run -d -p 6666:3306 --name=docker-mysql --
-env="MYSQL_ROOT_PASSWORD=test1234" --env="MYSQL_DATABASE=mydb" mysql
+docker run -d -p 6666:3306 --name=docker-mysql --env="MYSQL_ROOT_PASSWORD=test1234" --env="MYSQL_DATABASE=mydb" mysql
 docker exec -it docker-mysql bash
 # mysql -uroot -p
 test1234
