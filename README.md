@@ -256,8 +256,8 @@ docker run -t --name=coupon-app --link docker-mysql:mysql -p 10555:9091
 coupon_app
 docker build -f Dockerfile -t product_app .
 docker run -t --link docker-mysql:mysql -p 10666:9090 product_app
-docker run -t --link docker-mysql:mysql --link coupon-app:coupon_app -p
-10666:9090 product_app
+docker run -t --link docker-mysql:mysql --link coupon-app:coupon_app -p 10666:9090 product_app
+docker run -t --link docker-mysql-container:mysql --link coupon-app-container:coupon_app_image -p 10666:9090 product_app_image                                                                     
 Testing:
 http://localhost:10555/couponapiapi
 http://localhost:10666/productapi
