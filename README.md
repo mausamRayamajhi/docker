@@ -97,6 +97,12 @@ docker pause/unpause <container name>
 
 ```
 docker image prune -a
+```
+
+- Rename docker container
+
+```
+docker rename my_container my_new_container
 ``` 
  </p>
 </details>
